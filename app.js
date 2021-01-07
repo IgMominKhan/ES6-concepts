@@ -25,7 +25,7 @@ console.log(countriesOfAsia);
 //   console.log(i);
 // }
 
-// rest parameter in dynamic function
+// for of loop & rest parameter in dynamic function
 
 let restParameter = function (...numbers) {
   for (var number of numbers) {
