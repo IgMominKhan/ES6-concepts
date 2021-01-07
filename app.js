@@ -11,10 +11,18 @@ console.log("Hello World!");
 
 // use of spread operator
 
-let poorContriesOfAsia = ["Bangladesh", "Srilanka"];
-
+let poorCountriesOfAsia = ["Bangladesh", "Srilanka"];
 let richCountriesOfAsia = ["China", "Saudi Arab", "USA"];
-
-let countriesOfAsia = [...poorContriesOfAsia, ...richCountriesOfAsia]; // spread operator (...) will add all the content of the array.
-
+let countriesOfAsia = [...poorCountriesOfAsia, ...richCountriesOfAsia]; // spread operator (...) will add all the content of the array.
 console.log(countriesOfAsia);
+
+// use of rest parameter
+
+function restParameter(...elem) {
+  for (var i of elem) {
+    i += i;
+  }
+  console.log(i);
+}
+
+restParameter(1, 2, 3);
