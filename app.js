@@ -34,3 +34,21 @@ let restParameter = function (...numbers) {
   console.log(number);
 };
 restParameter(1, 2, 3);
+
+// Nested object
+
+var me = {
+  name: "Momin khan",
+  contacts: {
+    mobileNumber: 01756158991,
+    Email: "mominkhan8991@gmail.com",
+  },
+  address: {
+    village: "Borbariya",
+    thana: "Sarishabari",
+    subdistrict: "Sarishabari",
+    district: "Jamalput",
+  },
+};
+
+console.log(me["contacts"]["mobileNumber"]); // Can be used me.contacts.mobileNumber
