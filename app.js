@@ -27,7 +27,7 @@ console.log(countriesOfAsia);
 
 // for of loop & rest parameter in dynamic function
 
-let restParameter = function (...numbers) {
+const restParameter = function (...numbers) {
   for (var number of numbers) {
     number += number;
   }
@@ -37,7 +37,7 @@ restParameter(1, 2, 3);
 
 // Nested object
 
-var me = {
+const me = {
   name: "Momin khan",
   contacts: {
     mobileNumber: 01756158991,
@@ -47,8 +47,23 @@ var me = {
     village: "Borbariya",
     thana: "Sarishabari",
     subdistrict: "Sarishabari",
-    district: "Jamalput",
+    district: "Jamalpur",
   },
+  skills: [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "Jquery",
+    "Bootstrap3&4",
+    "git&github",
+    "PSD to HTML",
+    "JPG to HTML",
+  ],
 };
 
 console.log(me["contacts"]["mobileNumber"]); // Can be used me.contacts.mobileNumber
+
+// use of for in loop
+for (let pro in me) {
+  console.log(pro + ": " + me[pro]);
+}
