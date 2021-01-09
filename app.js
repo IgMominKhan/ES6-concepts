@@ -67,3 +67,8 @@ console.log(me["contacts"]["mobileNumber"]); // Can be used me.contacts.mobileNu
 for (let pro in me) {
   console.log(pro + ": " + me[pro]);
 }
+
+// De-structuring array
+var countries = ["BAN", "IND", "PAK", "US"];
+var [a, b, , d] = countries;
+console.log(d);
