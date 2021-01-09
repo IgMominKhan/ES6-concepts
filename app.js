@@ -72,3 +72,16 @@ for (let pro in me) {
 var countries = ["BAN", "IND", "PAK", "US"];
 var [a, b, , d] = countries;
 console.log(d);
+
+// Use of map method
+
+var mymap = new Map();
+mymap.set("key1", "BAN");
+mymap.set("key2", "IND");
+mymap.set("key3", "PAK");
+
+console.log(mymap.keys());
+mymap.delete("key2");
+console.log(mymap.has("key1"));
+console.log(mymap.get("key3"));
+mymap.clear();
