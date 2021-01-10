@@ -85,3 +85,16 @@ mymap.delete("key2");
 console.log(mymap.has("key1"));
 console.log(mymap.get("key3"));
 mymap.clear();
+
+// Use of set
+let mySet = new Set();
+mySet.add("BAN");
+mySet.add("IND");
+mySet.add("PAK");
+mySet.add("WIN");
+for (const props of mySet) {
+  if (mySet.has("PAK")) {
+    mySet.delete("PAK");
+  }
+}
+console.log(mySet.values());
