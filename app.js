@@ -40,7 +40,7 @@ restParameter(1, 2, 3);
 const me = {
   name: "Momin khan",
   contacts: {
-    mobileNumber: 01756158991,
+    mobileNumber: "01756158991",
     Email: "mominkhan8991@gmail.com",
   },
   address: {
@@ -98,3 +98,21 @@ for (const props of mySet) {
   }
 }
 console.log(mySet.values());
+
+// object oriented-Programming (inheritance)
+
+class Parents {
+  parentsFun() {
+    console.log("I am from Parents");
+  }
+}
+
+class Child extends Parents {
+  childFun() {
+    super.parentsFun();
+    console.log("I am from child");
+  }
+}
+
+let obj = new Child();
+obj.childFun();
