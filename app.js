@@ -55,9 +55,11 @@ const me = {
     "Javascript",
     "Jquery",
     "Bootstrap3&4",
-    "git&github",
-    "PSD to HTML",
-    "JPG to HTML",
+    "Nodejs",
+    "ExpressJs",
+    "Reactjs",
+    "Mongodb",
+    "git&github"
   ],
 };
 
